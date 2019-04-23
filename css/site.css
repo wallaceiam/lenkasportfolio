@@ -7,6 +7,10 @@ a {
     border-radius: 1.25rem !important;
 }
 
+img.round {
+    border-radius: 50% !important;
+}
+
 .btn-outline-primary {
     color: #36b3a8;
     background-color: transparent;
@@ -145,6 +149,10 @@ section.hero.portfolio-list {
     background-image: url(/imgs/hero/portfolio.png);
 }
 
+section.hero.about {
+    background-image: url(/imgs/hero/about.png);
+}
+
 section.hero.levell {
     background-image: url(/imgs/hero/levell.png);
 }
@@ -169,6 +177,10 @@ section.hero.camden {
 (min-resolution: 192dpi) {
     section.hero.home {
         background-image: url(/imgs/hero/hero@2x.png);
+    }
+
+    section.hero.about {
+        background-image: url(/imgs/hero/about@2x.png);
     }
 
     section.hero.portfolio-list {
