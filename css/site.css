@@ -28,7 +28,8 @@ a {
     color: #36b3a8;
 }
 
-p, ul {
+p,
+ul {
     color: #434343;
 }
 
@@ -70,6 +71,14 @@ footer i.fa-heart {
 .pb-8 {
     padding-bottom: 8rem !important;
 }
+@media (min-width: 768px) {
+    .pl-md-5 {
+        padding-left: 3rem!important;
+    }
+    .pr-md-5 {
+        padding-right: 3rem!important;
+    }
+}
 
 .bg-dark {
     background-color: #36b3a8 !important;
@@ -85,6 +94,10 @@ header .navbar-nav .active a.nav-link,
 header .navbar-nav a.nav-link {
     color: #e3e3e3;
     text-transform: uppercase;
+}
+
+a.navbar-brand img {
+    margin-right: 16px;
 }
 
 footer .nav a.nav-link {
@@ -132,6 +145,26 @@ section.hero.portfolio-list {
     background-image: url(/imgs/hero/portfolio.png);
 }
 
+section.hero.levell {
+    background-image: url(/imgs/hero/levell.png);
+}
+
+section.hero.genchange {
+    background-image: url(/imgs/hero/genchange.png);
+}
+
+section.hero.bloomsbury {
+    background-image: url(/imgs/hero/bloomsbury.png);
+}
+
+section.hero.gftravel {
+    background-image: url(/imgs/hero/gftravel.png);
+}
+
+section.hero.camden {
+    background-image: url(/imgs/hero/camden.png);
+}
+
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
     section.hero.home {
@@ -140,6 +173,18 @@ section.hero.portfolio-list {
 
     section.hero.portfolio-list {
         background-image: url(/imgs/hero/portfolio@2x.png);
+    }
+
+    section.hero.levell {
+        background-image: url(/imgs/hero/levell@2x.png);
+    }
+
+    section.hero.genchange {
+        background-image: url(/imgs/hero/genchange@2x.png);
+    }
+
+    section.hero.gftravel {
+        background-image: url(/imgs/hero/gftravel@2x.png);
     }
 }
 
@@ -154,8 +199,50 @@ section.hero .container .row h1 {
     text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+    section.hero .container .row h1 {
+        font-size: 3rem;
+}
+
 section.hero .container .row h2 {
     font-style: italic;
+}
+
+
+section#portfolio .card {
+    position: relative;
+}
+
+section#portfolio .card .overlay {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    text-align: center;
+    background-color: #36b3a8;
+}
+
+section#portfolio .card .overlay .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+section#portfolio .card h2,
+section#portfolio .card p {
+    color: #fff;
+}
+
+section#portfolio .card:hover .overlay {
+    opacity: 0.8;
 }
 
 .carousel {
@@ -185,14 +272,22 @@ section.hero .container .row h2 {
     color: #36b3a8;
     margin-right: 16px;
 }
+
 .portfolio-summary ul,
 .portfolio-summary p {
     margin-left: 44px;
 }
+
 .portfolio-summary h3 {
     margin-left: 60px;
 }
+
 /* state */
+a.navbar-brand:hover,
+a.navbar-brand:active {
+    color: #fff;
+}
+
 a:hover,
 a:active,
 header .navbar-nav a.nav-link:hover,
@@ -223,8 +318,8 @@ header .navbar-nav a.nav-link:active {
 .bg-dark:not(.hero) .btn-primary:active,
 .bg-dark:not(.hero) .btn-primary:not(:disabled):not(.disabled).active,
 .bg-dark:not(.hero) .btn-primary:not(:disabled):not(.disabled):active,
-.bg-dark:not(.hero) .show>.btn-primary.dropdown-toggle  {
-    background-color:transparent;
+.bg-dark:not(.hero) .show>.btn-primary.dropdown-toggle {
+    background-color: transparent;
     border-color: #fff;
     color: #fff;
     font-weight: 600;
@@ -256,6 +351,7 @@ header .navbar-nav a.nav-link:active {
 .quot::before {
     content: '\f10d';
 }
+
 .quot::after {
     content: '\f10e';
 }
