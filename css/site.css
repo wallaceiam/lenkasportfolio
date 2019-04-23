@@ -75,12 +75,14 @@ footer i.fa-heart {
 .pb-8 {
     padding-bottom: 8rem !important;
 }
+
 @media (min-width: 768px) {
     .pl-md-5 {
-        padding-left: 3rem!important;
+        padding-left: 3rem !important;
     }
+
     .pr-md-5 {
-        padding-right: 3rem!important;
+        padding-right: 3rem !important;
     }
 }
 
@@ -114,13 +116,7 @@ footer .nav a.nav-link {
     header .navbar-collapse .navbar-nav a.nav-link {
         color: #444;
     }
-}
 
-header .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
-}
-
-@media (max-width: 768px) {
     header .navbar-collapse {
         background-color: #fff;
         margin-left: -32px;
@@ -128,6 +124,15 @@ header .navbar-toggler-icon {
         padding: 32px;
         color: #444;
     }
+
+    ul.navbar-nav {
+        margin-bottom: 16px;
+    }
+
+}
+
+header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
 #overlay {
@@ -222,11 +227,13 @@ section.hero .container .row h2 {
 }
 
 
-section#portfolio .card {
+section#portfolio .card,
+.carousel .card {
     position: relative;
 }
 
-section#portfolio .card .overlay {
+section#portfolio .card .overlay,
+.carousel .card .overlay {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -240,7 +247,8 @@ section#portfolio .card .overlay {
     background-color: #36b3a8;
 }
 
-section#portfolio .card .overlay .text {
+section#portfolio .card .overlay .text,
+.carousel .card .overlay .text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -250,11 +258,14 @@ section#portfolio .card .overlay .text {
 }
 
 section#portfolio .card h2,
-section#portfolio .card p {
+section#portfolio .card p,
+.carousel .card h2,
+.carousel .card p {
     color: #fff;
 }
 
-section#portfolio .card:hover .overlay {
+section#portfolio .card:hover .overlay,
+.carousel .card:hover .overlay {
     opacity: 0.8;
 }
 
