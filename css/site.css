@@ -227,13 +227,13 @@ section.hero .container .row h2 {
 }
 
 
-section#portfolio .card,
-.carousel .card {
+section#portfolio .project,
+.carousel .project {
     position: relative;
 }
 
-section#portfolio .card .overlay,
-.carousel .card .overlay {
+section#portfolio .project .overlay,
+.carousel .project .overlay {
     position: absolute;
     opacity: 0;
     top: 0;
@@ -247,8 +247,8 @@ section#portfolio .card .overlay,
     background-color: #36b3a8;
 }
 
-section#portfolio .card .overlay .text,
-.carousel .card .overlay .text {
+section#portfolio .project .overlay .text,
+.carousel .project .overlay .text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -257,15 +257,15 @@ section#portfolio .card .overlay .text,
     transform: translate(-50%, -50%);
 }
 
-section#portfolio .card h2,
-section#portfolio .card p,
-.carousel .card h2,
-.carousel .card p {
+section#portfolio .project h2,
+section#portfolio .project p,
+.carousel .project h2,
+.carousel .project p {
     color: #fff;
 }
 
-section#portfolio .card:hover .overlay,
-.carousel .card:hover .overlay {
+section#portfolio .project:hover .overlay,
+.carousel .project:hover .overlay {
     opacity: 0.8;
 }
 
