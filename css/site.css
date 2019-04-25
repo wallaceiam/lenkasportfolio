@@ -1,6 +1,11 @@
 /* base */
 a {
+    transition: all 0.5s ease;
     color: #36b3a8;
+}
+
+.btn {
+    transition: all 0.5s ease;
 }
 
 .btn.rounded {
@@ -16,6 +21,13 @@ img.round {
     background-color: transparent;
     background-image: none;
     border-color: #36b3a8;
+}
+
+header .btn-outline-primary {
+    color: #ffffff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #ffffff;
 }
 
 .btn-primary {
@@ -55,9 +67,9 @@ footer .container .row {
     padding: .5rem 1rem;
 }
 
-footer i.fa-heart {
+/* footer i.fa-heart {
     color: red;
-}
+} */
 
 .fdb-block.fdb-viewport,
 .fdb-block.fdb-viewport .container {
@@ -146,7 +158,7 @@ header .navbar-toggler-icon {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     /* Black background with opacity */
 }
 
@@ -317,10 +329,15 @@ a.navbar-brand:active {
 }
 
 a:hover,
-a:active,
+a:active {
+    color: #247871;
+}
 header .navbar-nav a.nav-link:hover,
-header .navbar-nav a.nav-link:active {
-    color: #36b3a8;
+header .navbar-nav a.nav-link:active,
+footer .nav a.nav-link:hover,
+footer .nav a.nav-link:active  {
+    color: #fff;
+    font-weight: 600;
 }
 
 .btn-outline-primary:hover,
@@ -328,8 +345,9 @@ header .navbar-nav a.nav-link:active {
 .btn-outline-primary:not(:disabled):not(.disabled).active,
 .btn-outline-primary:not(:disabled):not(.disabled):active,
 .show>.btn-outline-primary.dropdown-toggle {
-    background-color: #36b3a8;
-    border-color: #36b3a8;
+    background-color: #fff;
+    border-color: #fff;
+    color: #36b3a8;
 }
 
 .btn-primary:hover,
@@ -374,6 +392,13 @@ header .navbar-nav a.nav-link:active {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .quot::before,
+    .quot::after {
+        font-size: 1rem;
+    }
 }
 
 .quot::before {
