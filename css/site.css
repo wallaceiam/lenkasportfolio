@@ -64,6 +64,10 @@ footer i.fa-heart {
     min-height: 512px;
 }
 
+section.fdb-block {
+    padding: 2.5rem 0;
+}
+
 .fdb-block.thin {
     padding: 3.75rem 0;
 }
