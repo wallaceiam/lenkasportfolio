@@ -331,9 +331,18 @@ section#portfolio .project:hover .overlay,
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2336b3a8' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-.carousel-inner {
-    padding-left: 5%;
-    padding-right: 5%;
+.carousel-inner .carousel-item {
+    min-height: 155px;
+}
+
+.carousel-inner .carousel-item .project img {
+    max-height: 256px;
+}
+
+.carousel-inner > .carousel-item > img, 
+.carousel-inner > .carousel-item > a > img{
+    margin:auto;
+
 }
 
 .portfolio-summary h2 i {
@@ -418,32 +427,17 @@ footer .nav a.nav-link:active  {
     background-color: rgba(0, 0, 0, 0.1)
 }
 
-.quot::before,
-.quot::after {
+.fa-quote-left,
+.fa-quote-right {
     color: #36b3a8;
-    font-family: "Font Awesome 5 Free";
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
+    margin: 0 4px;
 }
 
 @media (max-width: 768px) {
-    .quot::before,
-    .quot::after {
+    .fa-quote-left,
+    .fa-quote-right  {
         font-size: 1rem;
     }
-}
-
-.quot::before {
-    content: '\f10d';
-}
-
-.quot::after {
-    content: '\f10e';
 }
 
 /* theme */
