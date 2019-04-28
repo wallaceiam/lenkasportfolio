@@ -4,6 +4,11 @@ a {
     color: #36b3a8;
 }
 
+svg circle,
+svg path {
+    transition: all 0.5s ease;
+}
+
 .btn {
     transition: all 0.5s ease;
 }
@@ -114,11 +119,12 @@ section.fdb-block {
 a.navbar-brand,
 header .navbar-nav .active a.nav-link,
 header .navbar-nav a.nav-link {
-    color: #e3e3e3;
+    color: #fff;
     text-transform: uppercase;
 }
 
-a.navbar-brand img {
+
+a.navbar-brand svg {
     margin-right: 16px;
 }
 
@@ -323,9 +329,16 @@ section#portfolio .project:hover .overlay,
 }
 
 /* state */
-a.navbar-brand:hover,
-a.navbar-brand:active {
-    color: #fff;
+header a.navbar-brand:hover,
+header a.navbar-brand:active {
+    color: #36b3a8;
+}
+
+header a.navbar-brand:hover svg circle {
+    stroke: #36b3a8;
+}
+header a.navbar-brand:hover svg path {
+    fill: #36b3a8
 }
 
 a:hover,
@@ -333,7 +346,9 @@ a:active {
     color: #247871;
 }
 header .navbar-nav a.nav-link:hover,
-header .navbar-nav a.nav-link:active,
+header .navbar-nav a.nav-link:active {
+    color: #36b3a8;
+}
 footer .nav a.nav-link:hover,
 footer .nav a.nav-link:active  {
     color: #fff;
