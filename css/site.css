@@ -87,8 +87,9 @@ footer .container .row {
 
 .fdb-block.fdb-viewport,
 .fdb-block.fdb-viewport .container {
-    min-height: 512px;
+    min-height: 576px;
 }
+
 
 section.fdb-block {
     padding: 2.5rem 0;
