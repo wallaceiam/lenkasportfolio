@@ -222,6 +222,10 @@ section.hero.camden {
     background-image: url(/imgs/hero/camden.png);
 }
 
+section.hero.asto {
+    background-image: url(/imgs/hero/asto.png);
+}
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     section.hero.home {
         background-image: url(/imgs/hero/hero@2x.png);
